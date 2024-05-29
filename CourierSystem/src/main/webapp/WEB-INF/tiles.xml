@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!-- Base define  -->
+ <definition name="base.definition" 
+        template="/WEB-INF/layouts/classic.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />           
+        <put-attribute name="body" value="" /> 
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+ </definition> 
+ 
+    
+ <!-- Welcome Page  -->
+    <definition name="welcome" extends="base.definition">  
+        <put-attribute name="title" value="Welcome" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_welcome.jsp" />  
+    </definition>
+ <!-- About Us Page  -->
+    <definition name="about" extends="base.definition">  
+        <put-attribute name="title" value="About" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_about.jsp" />  
+    </definition>
+ <!-- Contact Us Page  -->
+    <definition name="contact" extends="base.definition">  
+        <put-attribute name="title" value="Contact Now" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_contact.jsp" />  
+    </definition> 
+ <!-- Login Page  -->
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_login.jsp" />  
+    </definition>  
+ <!-- User Register Page  -->
+    <definition name="register" extends="base.definition">  
+        <put-attribute name="title" value="User Register" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_register.jsp" />  
+    </definition>
+ <!-- Cost Page  -->
+    <definition name="addCost" extends="base.definition">  
+        <put-attribute name="title" value="Add Cost" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_addcost.jsp" />  
+    </definition>
+ <!-- Cost list Page  -->
+    <definition name="costList" extends="base.definition">  
+        <put-attribute name="title" value="Cost List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_costList.jsp" />  
+    </definition>
+ <!-- Branch Page  -->
+    <definition name="branch" extends="base.definition">  
+        <put-attribute name="title" value="Branch" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_branch.jsp" />  
+    </definition>
+ <!-- Branch list Page  -->
+    <definition name="branchList" extends="base.definition">  
+        <put-attribute name="title" value="Branch List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_branchList.jsp" />  
+    </definition>   
+ <!-- Add Staff Page  -->
+    <definition name="addStaff" extends="base.definition">  
+        <put-attribute name="title" value="Add Staff" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_addStaff.jsp" />  
+    </definition>
+ <!-- Staff Page  -->
+    <definition name="staffList" extends="base.definition">  
+        <put-attribute name="title" value="Staff List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_staffList.jsp" />  
+    </definition>
+ <!-- Courier Page  -->
+    <definition name="courier" extends="base.definition">  
+        <put-attribute name="title" value="Add Courier" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_courier.jsp" />  
+    </definition>    
+ <!-- Courier list Page  -->
+    <definition name="courierList" extends="base.definition">  
+        <put-attribute name="title" value="Search courier List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_courierList.jsp" />  
+    </definition>
+  
+  <!-- View Courier Page  -->
+    <definition name="view-courier" extends="base.definition">  
+        <put-attribute name="title" value="View courier" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_viewcourier.jsp" />  
+    </definition>   
+ 
+ <!-- Change Password -->
+    <definition name="changePassword" extends="base.definition">  
+        <put-attribute name="title" value="Change Password" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_changePassword.jsp" />  
+    </definition> 
+    
+ <!-- Payment -->
+    <definition name="payment" extends="base.definition">  
+        <put-attribute name="title" value="Payment" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_payment.jsp" />  
+    </definition>   
+ <!-- Feedback List -->
+    <definition name="feedbackList" extends="base.definition">  
+        <put-attribute name="title" value="Feedback List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_feedbackList.jsp" />  
+    </definition>     
+ <!-- My Profile -->
+    <definition name="myProfile" extends="base.definition">  
+        <put-attribute name="title" value="My Profile" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_myProfile.jsp" />  
+    </definition>
+ <!-- User List -->
+    <definition name="userList" extends="base.definition">  
+        <put-attribute name="title" value="User List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userList.jsp" />  
+    </definition>   
+ <!-- Error -->
+    <definition name="error" extends="base.definition">  
+        <put-attribute name="title" value="Error Page" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_error.jsp" />  
+    </definition>                                 
+</tiles-definitions>    
+    
