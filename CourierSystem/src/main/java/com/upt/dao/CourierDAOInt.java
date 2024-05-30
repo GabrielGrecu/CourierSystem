@@ -6,21 +6,21 @@ import com.upt.dto.CourierDTO;
 
 public interface CourierDAOInt {
 
-	public long add(CourierDTO dto);
+	long add(CourierDTO dto);
 
-	public void delete(CourierDTO dto);
+	void delete(CourierDTO dto);
 
-	public CourierDTO findBypk(long pk);
+	CourierDTO findBypk(long pk);
 	
-	public Long generateTrackingNumber();
+	Long generateTrackingNumber();
 
-	public void update(CourierDTO dto);
+	void update(CourierDTO dto);
 
-	public List<CourierDTO> list();
+	List<CourierDTO> list();
 
-	public List<CourierDTO> list(int pageNo, int pageSize);
+	List<CourierDTO> list(int pageNo, int pageSize);
 
-	public List<CourierDTO> search(CourierDTO dto);
+	List<CourierDTO> search(CourierDTO dto);
 
-	public List<CourierDTO> search(CourierDTO dto, int pageNo, int pageSize);
+	List<CourierDTO> search(CourierDTO dto, int pageNo, int pageSize);
 }

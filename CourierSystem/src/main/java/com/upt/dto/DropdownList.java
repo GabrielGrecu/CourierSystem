@@ -3,7 +3,7 @@ package com.upt.dto;
 
 public interface DropdownList
 {
-	public String getKey();
+	String getKey();
 
-	public String getValue();
+	String getValue();
 }

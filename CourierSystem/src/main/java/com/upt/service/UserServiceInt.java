@@ -7,29 +7,29 @@ import com.upt.exception.DuplicateRecordException;
 
 public interface UserServiceInt {
 
-	public long add(UserDTO dto) throws DuplicateRecordException;
+	long add(UserDTO dto) throws DuplicateRecordException;
 
-	public void delete(UserDTO dto);
+	void delete(UserDTO dto);
 
-	public UserDTO findBypk(long pk);
+	UserDTO findBypk(long pk);
 
-	public UserDTO findByLogin(String login);
+	UserDTO findByLogin(String login);
 
-	public void update(UserDTO dto) throws DuplicateRecordException;
+	void update(UserDTO dto) throws DuplicateRecordException;
 
-	public List<UserDTO> list();
+	List<UserDTO> list();
 
-	public List<UserDTO> list(int pageNo, int pageSize);
+	List<UserDTO> list(int pageNo, int pageSize);
 
-	public List<UserDTO> search(UserDTO dto);
+	List<UserDTO> search(UserDTO dto);
 
-	public List<UserDTO> search(UserDTO dto, int pageNo, int pageSize);
+	List<UserDTO> search(UserDTO dto, int pageNo, int pageSize);
 
-	public UserDTO authentication(UserDTO dto);
+	UserDTO authentication(UserDTO dto);
 	
-	public boolean changePassword(Long id, String oldPassword, String newPassword);
+	boolean changePassword(Long id, String oldPassword, String newPassword);
 	  
-	public boolean forgetPassword(String login);
+	boolean forgetPassword(String login);
 	
-	public Long countUser();
+	Long countUser();
 }
